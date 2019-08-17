@@ -1,6 +1,7 @@
 package com.mayikt.weixin.service;
 
 import com.mayikt.weixin.entity.AppEntity;
+import org.springframework.stereotype.Repository;
 import org.springframework.web.bind.annotation.GetMapping;
 
 /**
@@ -8,6 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
  *
  * @blame Android Team
  */
+@Repository
 public interface WeiXinAppService {
 
     /**
