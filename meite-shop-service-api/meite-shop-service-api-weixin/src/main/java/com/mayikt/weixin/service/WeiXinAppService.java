@@ -1,7 +1,8 @@
 package com.mayikt.weixin.service;
 
 import com.mayikt.weixin.entity.AppEntity;
-import org.springframework.stereotype.Repository;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.GetMapping;
 
 /**
@@ -9,7 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
  *
  * @blame Android Team
  */
-@Repository
+@Api(tags = "微信服务")
 public interface WeiXinAppService {
 
     /**
@@ -17,6 +18,7 @@ public interface WeiXinAppService {
      *
      * @return AppEntity
      */
+    @ApiOperation("获取app服务")
     @GetMapping("/getApp")
     AppEntity getApp();
 }

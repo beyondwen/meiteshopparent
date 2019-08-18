@@ -23,7 +23,6 @@ public class MemberServiceImpl implements MemberService {
      * @return AppEntity
      */
     @Override
-    @GetMapping("/memberInvokeWeiXin")
     public AppEntity memberInvokeWeiXin() {
         return weixinAppServiceFeign.getApp();
     }
